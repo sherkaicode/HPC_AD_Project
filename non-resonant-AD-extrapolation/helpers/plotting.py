@@ -135,11 +135,12 @@ def plot_all_variables(sig_list, bkg_list, xlabels, labels=["sig", "bkg"], name=
             ax1[i].set_yticks([])
             ax1[i].legend(loc='upper right', fontsize = 9)
 
-        plt.show
         plt.title(title)
-        plot_name = f"{outdir}/{name}.png"
-        plt.savefig(plot_name.replace(" ", "_"))
-        plt.close()
+        print("test")
+        plt.show()
+#         plot_name = f"{outdir}/{name}.png"
+#         plt.savefig(plot_name.replace(" ", "_"))
+#         plt.close()
     else:
         print("Wrong input lists!")
         
